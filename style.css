@@ -1,0 +1,685 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: normal;
+  src: local("EB Garamond"), url("assets/font/EB Garamond/EB Garamond.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Afterglow Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Afterglow Regular"), url("assets/font/afterglow/Afterglow-Regular.woff") format("woff");
+}
+
+.penutup {
+  transform: rotate(180deg);
+}
+
+:root {
+  --primary-gold: #ffcc5f;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Quicksand", sans-serif !important;
+  overflow-x: hidden;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ffcc5f 0%, #473307 100%);
+}
+
+#openner {
+  height: 100vh;
+  position: fixed;
+ background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), 
+ url(assets/img/opener-img.png.jpeg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  z-index: 12;
+  transition: 0.5s;
+}
+
+.top-heading-openner {
+  font-family: Afterglow regular;
+  font-size: 2vmax;
+  color: white;
+  letter-spacing: 10px;
+}
+
+.heading-openner {
+  font-family: Signatie;
+  font-size: 7vmax;
+  color: var(--primary-gold);
+  position: relative;
+}
+
+.text-group-bottom {
+  color: white;
+  max-width: 500px;
+}
+
+.text-group-bottom p {
+  font-size: 1.2rem;
+}
+
+
+#jumbotron .container-fluid {
+  height: 100vh;
+  background-image: url(assets/img/alex-img.png.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#jumbotron .container-fluid::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.436) 0%, rgb(0, 0, 0) 100%);
+  bottom: 0;
+}
+.wedding-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8rem;
+  color: #fff8f0;
+  margin-bottom: 0.4rem;
+  text-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.wedding-title::after {
+  content: '';
+  display: block;
+  width: 70px; /* garis diperpanjang */
+  height: 2px;
+  background: linear-gradient(90deg, #b4886b, #d9b382);
+  margin: 8px auto 0;
+  border-radius: 2px;
+  box-shadow: 0 0 4px #d9b382;
+}
+
+.couple-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 300; /* dibuat lebih tipis */
+  color: #ffe8d6;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+  letter-spacing: 1.8px;
+  text-align: center;
+  margin-top: 0.6rem; /* beri jarak agar tidak terlalu dekat */
+  margin-bottom: 0.8rem;
+  line-height: 1.1;
+  padding-top: 6px;
+  /* garis atas dihapus */
+}
+
+.text-header {
+  width: 500px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.header-decoration-center {
+  position: absolute;
+  bottom: calc(-350px / 2);
+  transform: translate(-50%);
+  left: 50%;
+  width: 350px;
+  z-index: 1;
+}
+
+.header-decoration-left {
+  position: absolute;
+  animation: rotation-mandala 50s infinite linear;
+  z-index: 2;
+}
+.header-decoration-right {
+  position: absolute;
+  animation: rotation-mandala 50s infinite reverse linear !important;
+  z-index: 2;
+}
+
+#pengantin {
+  background: radial-gradient(116.09% 189.76% at 50.01% 50.02%, #161621 0%, #000000 69.58%);
+  padding-bottom: 95px;
+}
+
+.first-divider {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+}
+
+#pengantin .container {
+  padding-top: 45px;
+}
+
+.heading-title h3 {
+  font-family: Afterglow regular;
+  color: var(--primary-gold);
+  font-size: 2rem;
+  margin-top: -4px;
+  text-shadow: 0px 1px 1px #0000006e;
+}
+
+.heading-title img {
+  width: 350px;
+}
+
+.wrapper-foto {
+  z-index: 0;
+  display: inline-block;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+/* .wrapper-foto::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #ffcc5f;
+ 
+} */
+
+.foto-pengantin {
+  width: 250px;
+}
+
+.bg-pengantin {
+  width: 400px;
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.middle-pengantin {
+  font-family: Afterglow regular;
+  color: var(--primary-gold);
+  font-size: 5rem;
+}
+
+.nama-pengantin {
+  position: relative;
+  margin-top: -45px;
+  color: var(--primary-gold);
+}
+
+.nama-pengantin h2 {
+  font-family: Signatie;
+  font-size: 2.5rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.nama-pengantin h3 {
+  font-family: Afterglow Regular;
+  font-size: 1.8rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.deskripsi-box {
+  max-width: 250px;
+  color: white;
+}
+
+.second-divider {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+#hari-bahagia {
+  margin-top: 0.8rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #e2e2e2 100%);
+  padding-bottom: 2rem;
+}
+
+.waktu {
+  font-family: Afterglow Regular;
+  color: #cc9933;
+}
+
+.angka-waktu {
+  font-size: 4.2rem;
+}
+
+.ket-waktu {
+  margin-top: -20px;
+  font-size: 1.6rem;
+}
+
+.dekorasi-waktu {
+  display: block;
+  width: 380px;
+  margin: auto;
+}
+
+.detail-lokasi {
+  background: radial-gradient(116.09% 189.76% at 50.01% 50.02%, #161621 0%, #000000 69.58%);
+}
+
+.detail-lokasi .container {
+  max-width: 800px;
+}
+
+.deskripsi-lokasi {
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #ffcc5f 0%, #473307 100%);
+  border: none !important;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 226, 5, 0.5) !important;
+}
+
+.maps {
+  height: 400px;
+}
+
+#foto-nikah {
+  background: radial-gradient(116.09% 189.76% at 50.01% 50.02%, #161621 0%, #000000 69.58%);
+}
+
+.decor-foto-nikah {
+  width: 380px;
+}
+
+.heading-foto {
+  text-align: center;
+  font-family: Afterglow Regular;
+  font-size: 2.6rem;
+  color: var(--primary-gold);
+}
+
+#protokol-kesehatan {
+  margin-top: 0.8rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #e2e2e2 100%);
+  padding-bottom: 2rem;
+  color: #cc9933;
+}
+
+.protocol-instruction img {
+  display: block;
+  margin: 0 auto;
+  width: 650px;
+}
+
+#pesan {
+  background: radial-gradient(116.09% 189.76% at 50.01% 50.02%, #161621 0%, #000000 69.58%);
+  padding-top: 35px;
+}
+
+.garis {
+  margin: 20px 0px;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #cc9933;
+}
+
+.message p {
+  margin: 0;
+    word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+.message {
+  background-color: white;
+  padding: 7px;
+  border-radius: 12px;
+  position: relative;
+  max-width: 70%;
+  flex: 1;
+}
+
+.message::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 20px solid white;
+  border-bottom: 10px solid transparent;
+  top: 50%;
+  left: -20px;
+  transform: translate(0, -50%);
+  position: absolute;
+}
+
+.box-message {
+  height: 400px;
+  overflow-y: auto;
+}
+
+footer {
+  padding: 10px 0;
+  background: linear-gradient(180deg, #ffcc5f 0%, #473307 100%);
+}
+
+footer p {
+  margin: 0;
+}
+
+.alert-warning {
+  background: linear-gradient(180deg, rgba(255, 204, 95, 0.7) 0%, rgba(71, 51, 7, 0.7) 100%);
+  border: none !important;
+}
+
+.text-primary {
+  color: red !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 226, 5, 0.5) !important;
+  border: none;
+}
+
+.form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 226, 5, 0.5) !important;
+  border: none;
+}
+
+.nama-mepandes {
+  font-family: Afterglow Regular;
+  line-height: 1.5em;
+  color: var(--primary-gold);
+}
+
+.border-description p {
+  margin-bottom: 7px;
+}
+
+.border-description {
+  border-bottom: 2px solid var(--primary-gold);
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.border-description::after {
+  content: "";
+  display: block;
+  background-color: var(--primary-gold);
+  width: 15px;
+  height: 15px;
+  bottom: calc(-15px / 2);
+  border-radius: 50px;
+  position: absolute;
+}
+
+.border-description::before {
+  content: "";
+  display: block;
+  background-color: var(--primary-gold);
+  width: 15px;
+  height: 15px;
+  bottom: calc(-15px / 2);
+  border-radius: 50px;
+  right: 0;
+  position: absolute;
+}
+
+.bg-mepandes {
+  width: 600px !important;
+}
+
+.orang-mepandes {
+  z-index: 2;
+}
+
+.music-icon {
+  position: fixed;
+  color: white;
+  background-color: #cc9933;
+  padding: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 1px 1px 5px #00000052;
+  z-index: 10;
+  transition: 0.4s;
+}
+
+.music-icon:hover {
+  filter: brightness(1.3);
+}
+
+.music-icon.disabled {
+  filter: grayscale();
+}
+
+.logo-semat {
+  width: 300px !important;
+}
+
+@keyframes rotation-mandala {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 890px) {
+  .header-decoration-center {
+    bottom: calc(-350px / 2);
+    transform: translate(-50%);
+    left: 50%;
+    width: 350px;
+  }
+
+  .header-decoration-left {
+    left: calc(-300px / 2);
+    bottom: calc(-350px / 2);
+    width: 400px;
+  }
+  .header-decoration-right {
+    right: calc(-300px / 2);
+    bottom: calc(-350px / 2);
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .maps {
+    height: 100%;
+  }
+}
+
+@media (min-width: 650px) {
+  .header-decoration-center {
+    bottom: calc(-350px / 2);
+    transform: translate(-50%);
+    left: 50%;
+    width: 350px;
+  }
+
+  .header-decoration-left {
+    left: calc(-300px / 2);
+    bottom: calc(-350px / 2);
+    width: 350px;
+  }
+  .header-decoration-right {
+    right: calc(-300px / 2);
+    bottom: calc(-350px / 2);
+    width: 350px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-decoration-center {
+    bottom: calc(-350px / 2);
+    transform: translate(-50%);
+    left: 50%;
+    width: 350px;
+  }
+
+  .header-decoration-left {
+    left: calc(-300px / 2);
+    top: calc(-350px / 2);
+    width: 350px;
+  }
+  .header-decoration-right {
+    right: calc(-300px / 2);
+    top: calc(-350px / 2);
+    width: 350px;
+  }
+
+  .angka-waktu {
+    font-size: 3.2rem;
+  }
+
+  .ket-waktu {
+    margin-top: -20px;
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem !important;
+  }
+
+  .text-group-bottom p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 419px) {
+  .header-decoration-center {
+    bottom: calc(-350px / 2);
+    transform: translate(-50%);
+    left: 50%;
+    width: 350px;
+  }
+
+  .header-decoration-left {
+    left: calc(-300px / 2);
+    top: calc(-300px / 2);
+    width: 300px;
+  }
+  .header-decoration-right {
+    right: calc(-300px / 2);
+    top: calc(-300px / 2);
+    width: 300px;
+  }
+
+  .angka-waktu {
+    font-size: 2.6rem;
+  }
+
+  .ket-waktu {
+    margin-top: -18px;
+    font-size: 1rem;
+  }
+
+  .heading-foto {
+    font-size: 2.2rem;
+
+  }
+
+.wave-top {
+  position: relative;
+  top: 0;
+  line-height: 0;
+  z-index: 0;
+}
+
+.wave-top svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+  transform: rotate(180deg); /* Membuatnya melengkung ke atas */
+}
+
+
+
+/* Font khusus judul wedding */
+#galeri-wedding .judul-galeri {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #ffcc5f;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Container Galeri */
+#galeri-wedding {
+  padding: 1.5rem;
+  background-color: #2e2c25;
+  border-left: 5px solid #ffcc5f;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Gambar Galeri */
+#galeri-wedding img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  cursor: pointer;
+}
+
+/* Efek saat mouse hover (masuk ke gambar) */
+#galeri-wedding img:hover {
+  filter: brightness(60%);
+  transform: scale(1.05);
+}
+
+
+
+}
+
+@keyframes changeBackgroundImage {
+  0% {
+    background-image: url("https://picsum.photos/id/1015/1500/1000");
+  }
+  50% {
+    background-image: url("assets/img/mockup-asset-jumbo.png");
+  }
+  100% {
+    background-image: url("https://picsum.photos/id/1016/1500/1000");
+  }
+}
